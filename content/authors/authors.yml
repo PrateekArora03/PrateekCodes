@@ -1,0 +1,14 @@
+- name: Prateek Arora
+  bio: |
+    I write about modern JavaScript, Node.js, design and all things web development.
+  avatar: ./avatars/Prateek.jpg
+  featured: true
+  social:
+    - name: github
+      url: https://github.com/prarora98
+    - name: twitter
+      url: https://twitter.com/Prateek_Codes
+    - name: instagram
+      url: https://instagram.com/prateekcodes
+    - name: linkedin
+      url: https://linkedin.com
