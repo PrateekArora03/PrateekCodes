@@ -1,14 +1,16 @@
-import React from "react";
+/** @jsx jsx */
+// import React from "react";
 import logo from "../../../../assets/logo.png";
+import { jsx } from "theme-ui";
 
 export default function Logo() {
   return (
     <div>
       <img src={logo} alt={"logo"} style={{ "vertical-align": "middle" }}></img>
       <h1
-        style={{
+        sx={{
           display: "inline-block",
-          color: "black",
+          color: "primary",
           fontSize: "23px",
           "vertical-align": "middle"
         }}
