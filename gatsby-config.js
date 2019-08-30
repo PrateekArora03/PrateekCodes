@@ -3,7 +3,7 @@ module.exports = {
     title: `Prateek Arora`,
     name: `Prateek`,
     siteUrl: `https://prateekcodes.com`,
-    description: `This is my description that will be used in the meta tags and important for search results`,
+    description: `Prateek Arora | documenting my Journey | Currently learning #NodeJS | Google Scholar Udacity 2K18`,
     hero: {
       heading: `Let's learn and code together.`,
       maxWidth: 652
