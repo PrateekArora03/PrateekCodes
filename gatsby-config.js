@@ -30,6 +30,12 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sitemap`,
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-146786460-1"
+      }
+    },
+    {
       resolve: "@narative/gatsby-theme-novela",
       options: {
         contentPosts: "content/posts",
