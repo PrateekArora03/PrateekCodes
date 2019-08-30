@@ -12,7 +12,8 @@ export default function Logo() {
           display: "inline-block",
           color: "primary",
           fontSize: "23px",
-          "vertical-align": "middle"
+          "vertical-align": "middle",
+          transition: "colorModeTransition"
         }}
       >
         Prateek <span style={{ color: "#7A8085" }}>Arora</span>
