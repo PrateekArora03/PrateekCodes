@@ -1,5 +1,5 @@
 ---
-title: Create your own if without using IF statement😎
+title: You may not need if else statement😎
 author: Prateek Arora
 date: 2019-09-09
 hero: ./images/hero.jpeg
@@ -44,6 +44,9 @@ alert( null && 2 ); // null
 ### So Now See the Shortest way of writing if statement 
 
 Basically, to create own if statement using `&&` operator you just have to follow this structure 
+
+![use && operator as if statement](./images/use-&&-operator-as-if-statement.jpg)
+
 - (condition) && (some instructions) 
 - for example:  someVar > someOtherVar && console.log('yeah') This will log 'yeah' if someVar is bigger than someOtherVar.
 
@@ -55,3 +58,16 @@ var b=21;
 ![create if using && opreator output](./images/create-if-using-&&-opreator-output.png)
 
 In this example we just create two if statements, one with the traditional method and the other with this one, to check if 'someString' is truthy. As we can see, both cases are logged on the console.
+
+> You can also create your own if-else using `&&` and `||` operator
+
+![flow chart of IF ELSE using && and || operator](./images/flow-chart-of-IF-ELSE-using-&&-and-||-operator.jpg)
+![create if else using && || opreator](./images/create-if-else-using-&&-||-opreator.png)
+#### execute by own
+```javascript
+((false) && (console.log("execute when condition true")||true))
+||console.log("execute when condition false")
+```
+
+***
+Thank you so much for reading my article on **You may not need if-else statement!.** Be sure to follow me on [Twitter](https://twitter.com/prateek_codes) for lots of tweets about tech. Feel free to comment below or tweet me with any questions you may have.
