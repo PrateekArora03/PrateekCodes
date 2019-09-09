@@ -12,7 +12,10 @@ export default function Logo() {
           color: "primary",
           fontSize: "23px",
           "vertical-align": "middle",
-          transition: "colorModeTransition"
+          transition: "colorModeTransition",
+          "@media screen and (max-width:640px)": {
+            fontSize: "14px"
+          }
         }}
       >
         Prateek <span style={{ color: "#7A8085" }}>Arora</span>
