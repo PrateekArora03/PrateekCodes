@@ -1,37 +1,39 @@
 ---
-title: You may not need if else statement😎
+title: You may not need if-else statement😎
 author: Prateek Arora
 date: 2019-09-09
-hero: ./images/hero.jpeg
+hero: ./images/hero.jpg
 excerpt: learn how to create if statement using && operator
 ---
 
-So, today I am going to show you a little `simple tip` of writing if statement without using if statement in a shorter way.. It's an short, simple and coolest version of `IF statement`.
+So, today I am going to show you a little `simple tip` of writing an *if statement* without using *if statement* in a shorter way. It's a short, simple and coolest version of `IF statement`.
 
->This can help you clean up your code a little bit, making it easier for the eye.
+>This can help you clean up your code a little bit, making it easier to read.
 
-### Let's see how if statement works?
-The `if` statement evaluates the test expression inside the parenthesis `()`.
+### Let's see how *if statement* works:
+An `if statement` evaluates the test expression inside the parenthesis `()`
 -   If the test expression is `true`, statements inside the body of  `if`  are executed.
 -   If the test expression is `false`, statements inside the body of  `if`  are not executed.
 
 ![Flow chart of if statement](./images/flow-chat-of-if.jpg)
 
-Lets see the code how we write `if statement` while writing code ??
+Let's see the code how we write `if statement` while writing code ??
+
+Let's see how the *if statement* code looks like:
 
 ```javascript
-	if(condition){
-		//block of code to be executed if the condition is true
-	}
+    if(condition){
+        //block of code to be executed if the condition is true
+    }
 ```
-### Now look toward's && operator
-The `&&` operator are also known  as `logical AND operator`.  Evaluates operands from left to right. `&&` operator find the first falsy value.
+### Now let's look at the `&&` operator
+The `&&` operator is also known as the `logical AND operator`. It evaluates operands from left to the right and returns the first falsy value.
 ![flow chart of && operator](./images/flow-chat-of-&&-operator.jpg)
--   for each operand or case, `&&` operator convert it into boolean. if the output is `false`, its stop exectution and return the last operand value.
--   If all operand or case is `true`, return last operand.
+- For each operand or case, `&&` operator converts the value into boolean. If the output is `false`, it stops the execution and returns the last operand value.
+-   If all operands or cases are `true`, it returns the last operand.
 ```javascript
-//if the first operand is true,
-//return second operand
+//If the first operand is true,
+//return the second operand
 
 alert( 1 && 3 ); // 3
 
@@ -41,33 +43,52 @@ alert( 1 && 3 ); // 3
 
 alert( null && 2 ); // null
 ```
-### So Now See the Shortest way of writing if statement 
+### So now let's see the shortest way of writing an if statement 
 
-Basically, to create own if statement using `&&` operator you just have to follow this structure 
+Basically, to create your own if statement using `&&` operator, you have to follow this structure 
 
 ![use && operator as if statement](./images/use-&&-operator-as-if-statement.jpg)
 
 - (condition) && (some instructions) 
 - for example:  someVar > someOtherVar && console.log('yeah') This will log 'yeah' if someVar is bigger than someOtherVar.
+#### Using *If statement*
+```javascript
+var a=60;
+var b=21;
+if(a>b){
+	console.log(`${a} is greater than ${b}`);
+}
+```
+**Output**
+![create if using if statement output](./images/create-if-using-if-statement-output.png)
 
+#### Using *&& opreator*
 ```javascript
 var a=60;
 var b=21;
 (a>b)&&(console.log(`${a} is greater than ${b}`))
 ```
+**Output**
 ![create if using && opreator output](./images/create-if-using-&&-opreator-output.png)
 
-In this example we just create two if statements, one with the traditional method and the other with this one, to check if 'someString' is truthy. As we can see, both cases are logged on the console.
+In this example, we created two if statements. One with the traditional method and the other with the && operator, to check if `(a>b)` is truthy. As we can see, both cases are logged on the same console.
 
 > You can also create your own if-else using `&&` and `||` operator
 
 ![flow chart of IF ELSE using && and || operator](./images/flow-chart-of-IF-ELSE-using-&&-and-||-operator.jpg)
+
+- First, write an if condition like `(true or false)`
+- If the condition is truthy, the operator executes the truth body, and the || (or operator) stops the execution as it found a truthy value. **|| returns the first truthy false**.
+
+- Else executes when the condition is falsy when using the || operator. The || operator moves to the next operands to find the first truthy value.
+
+#### Example
 ![create if else using && || opreator](./images/create-if-else-using-&&-||-opreator.png)
-#### execute by own
+#### execute by own and create your own if-else statement 😂
 ```javascript
 ((false) && (console.log("execute when condition true")||true))
 ||console.log("execute when condition false")
 ```
 
 ***
-Thank you so much for reading my article on **You may not need if-else statement!.** Be sure to follow me on [Twitter](https://twitter.com/prateek_codes) for lots of tweets about tech. Feel free to comment below or tweet me with any questions you may have.
+Thank you so much for reading my article on **You may not need if-else statement!** Be sure to follow me on [Twitter](https://twitter.com/prateek_codes) for lots of tweets about tech. Feel free to comment below or tweet me with any questions you may have.
