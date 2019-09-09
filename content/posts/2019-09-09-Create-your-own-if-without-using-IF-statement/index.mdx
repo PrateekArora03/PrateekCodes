@@ -10,6 +10,13 @@ So, today I am going to show you a little `simple tip` of writing if statement w
 
 >This can help you clean up your code a little bit, making it easier for the eye.
 
+### Let's see how if statement works?
+The `if` statement evaluates the test expression inside the parenthesis `()`.
+-   If the test expression is `true`, statements inside the body of  `if`  are executed.
+-   If the test expression is `false`, statements inside the body of  `if`  are not executed.
+
+![Flow chart of if statement](./images/flow-chat-of-if.jpg)
+
 Lets see the code how we write `if statement` while writing code ??
 
 ```javascript
@@ -17,9 +24,20 @@ Lets see the code how we write `if statement` while writing code ??
 		//block of code to be executed if the condition is true
 	}
 ```
+### Now look toward's && operator
+The `&&` operator are also known  as `logical AND operator`.  Evaluates operands from left to right. `&&` operator find the first falsy value.
+![flow chart of && operator](./images/flow-chat-of-&&-operator.jpg)
+-   for each operand or case, `&&` operator convert it into boolean. if the output is `false`, its stop exectution and return the last operand value.
+-   If all operand or case is `true`, return last operand.
+```javascript
+//if the first operand is true,
+//return second operand
 
-## So Now See the Shortest way of writing if statement 
+alert( 1 && 3 ); // 3
 
-Basically you just have to follow this structure - (some condition) && (some instructions) - for example:  someVar > someOtherVar && console.log('yeah') This will log 'yeah' if someVar is bigger than someOtherVar.
+//if the first operand is falsy,
+//return first false value,
+//and ignore left operands
 
-In this example we just create two if statements, one with the traditional method and the other with this one, to check if 'someString' is truthy. As we can see, both cases are logged on the console.
+alert( null && 2 ); // null
+```
