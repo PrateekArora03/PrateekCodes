@@ -41,3 +41,17 @@ alert( 1 && 3 ); // 3
 
 alert( null && 2 ); // null
 ```
+### So Now See the Shortest way of writing if statement 
+
+Basically, to create own if statement using `&&` operator you just have to follow this structure 
+- (condition) && (some instructions) 
+- for example:  someVar > someOtherVar && console.log('yeah') This will log 'yeah' if someVar is bigger than someOtherVar.
+
+```javascript
+var a=60;
+var b=21;
+(a>b)&&(console.log(`${a} is greater than ${b}`))
+```
+![create if using && opreator output](./images/create-if-using-&&-opreator-output.png)
+
+In this example we just create two if statements, one with the traditional method and the other with this one, to check if 'someString' is truthy. As we can see, both cases are logged on the console.
