@@ -68,4 +68,8 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
+#Lock file
+yarn.lock
+package-lock.json
+
 .netlify/
