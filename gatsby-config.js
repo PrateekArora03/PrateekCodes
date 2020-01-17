@@ -15,7 +15,7 @@ module.exports = {
       },
       {
         name: `github`,
-        url: `https://github.com/prarora98`
+        url: `https://github.com/prateekcodes`
       },
       {
         name: `instagram`,
